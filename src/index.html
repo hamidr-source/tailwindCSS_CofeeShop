@@ -4,8 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body class="w-screen h-screen m-0 p-0 font-sans">
+    <header
+      class="sticky top-0 left-0 w-full h-1/6 bg-yellow-50 text-black flex justify-around items-center"
+    >
+      <i class="fa-duotone fa-solid fa-arrow-left text-2xl"> </i>
+      <span class="text-2xl hover:text-green-400">Details</span>
+      <i
+        class="fa-solid fa-mug-hot text-2xl relative bg-slate-50 w-10 h-10 py-1 px-2 rounded-2xl"
+      >
+        <span
+          class="absolute right-0 bg-green-400 w-3 h-3 rounded-2xl z-10"
+        ></span>
+      </i>
+    </header>
+    <div class="w-full h-4/6 flex text-2xl mt-8">
+      <div class="w-3/4 h-4/5 shadow-lg mx-auto">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LoykU3C830ljYHTISzaQPnNovNZmUUjeFw&s"
+          alt=""
+          class="w-full h-1/2"
+        />
+        <div class="flex justify-between p-4 mt-3">
+          <span class="font-light">Americanos</span
+          ><span class="text-green-400 font-semibold">12$</span>
+        </div>
+        <div class="text-sm/[17px] p-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+          consequuntur deleniti reprehenderit
+        </div>
+        <div class="flex justify-evenly items-end mt-4 text-base relative bottom-0 left-1/2 w-1/2">
+          <button><i class="fa-solid fa-plus bg-green-400 text-white w-8 h-6 p-1 rounded-3xl"></i></button>
+          <p>0</p>
+          <button><i class="fa-solid fa-minus bg-green-400 text-white w-8 h-6 p-1 rounded-3xl"></i></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
